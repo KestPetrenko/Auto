@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/Ubuntu.ttf">
+    <title>Car</title>
+</head>
+
+<body>
+    <footer>
+        <div class="footerDiv" id="idFooter">
+            <a href="#idMainFooter"><span class="spanfooterDiv">Виды авто</span></a>
+            <a href="#idMainCentrTop"><span class="spanfooterDiv">Почему мы</span></a>
+            <a href="#idCredit"><span class="spanfooterDiv">Кредит на покупку авто</span></a>
+            <a href="#idCentrHeader"><span class="spanfooterDiv">Вопросы</span></a>
+            <span class="spanfooterDiv1"> +38-066-303-50-97 <br> Ежедневно с 9:00 до 18:00</span>
+        </div>
+        <h1 class="Vukyp">Срочный выкуп авто <br> в Киеве и области</h1>
+        <div class="stoimost">
+            <span>До <span class="span90"> 90% </span>от рыночной цены</span>
+            <span>Деньги в день оценки</span>
+            <button onclick="window.location.href = '#mainTop';">Узнать цену выкупа</button>
+        </div>
+    </footer>
+    <main class="mainFooter" id="idMainFooter">
+        <span class="titleMainFooter">Виды выкупаемых авто</span>
+        <div class="probeg">
+            <span> - Автомобили с пробегом</span>
+        </div>
+        <div id="output"></div>
+        <template id="monthReport">
+            <div class="report-block">
+                <div class="bg" style="background-image: url('{{imagePath}}');"></div>
+                <p class="model">{{model}}</p>
+                <div class="characteristic">
+                    <p class="month">Год выпуска : {{month}}</p>
+                    <p class="amount">Двигатель : {{engine}} л.</p>
+                    <p class="type">Тип двигателя : {{type}}</p>
+                    <p class="price">Стоимость : <span class="priceSpan"> {{price}} $ </span></p>
+                </div>
+            </div>
+        </template>
+        <div class="avariynie">
+            <span> - Аварийные автомобили</span>
+        </div>
+        <div id="output1"></div>
+        <template id="monthReport1">
+            <div class="report-block">
+                <div class="bg" style="background-image: url('{{imagePath}}');"></div>
+                <p class="model">{{model}}</p>
+                <div class="characteristic">
+                    <p class="month">Год выпуска : {{month}}</p>
+                    <p class="amount">Двигатель : {{engine}} л.</p>
+                    <p class="type">Тип двигателя : {{type}}</p>
+                    <p class="price">Стоимость : <span class="priceSpan"> {{price}} $ </span></p>
+                </div>
+            </div>
+        </template>
+
+        <div class="neispravnie">
+            <span> - Неисправные автомобили</span>
+        </div>
+        <div id="output2"></div>
+        <template id="monthReport2">
+            <div class="report-block">
+                <div class="bg" style="background-image: url('{{imagePath}}');"></div>
+                <p class="model">{{model}}</p>
+                <div class="characteristic">
+                    <p class="month">Год выпуска : {{month}}</p>
+                    <p class="amount">Двигатель : {{engine}} л.</p>
+                    <p class="type">Тип двигателя : {{type}}</p>
+                    <p class="type">Описание : {{text}}</p>
+                    <p class="price">Стоимость : <span class="priceSpan"> {{price}} $ </span></p>
+                </div>
+            </div>
+        </template>
+    </main>
+
+    <main class="mainCentrTop" id="mainTop">
+        <div class="zajvka">
+            <span>Дорого и быстро выкупим </span>
+            <span>Ваш автомобиль</span>
+            <br>
+            <div class="zajvka2">
+                <span>Оставьте заявку, чтобы узнать</span>
+                <span>стоимость выкупа вашей машины</span>
+            </div>
+            <input type="text" name="" id="name" value="Ваше имя*">
+            <input type="text" name="" id="phone" value="Ваш телефон*">
+            <button class="otpravite">Оставьте заявку</button>
+        </div>
+        <div class="slesar"></div>
+    </main>
+
+    <main class="mainCentrCentr" id="idMainCentrTop">
+        <span class="tittlePreimyshestva">Наши преимущества</span>
+        <div class="preimyshestva">
+            <div class="div1">
+                <span class="namePreimyshestva">Продаете авто сами</span>
+                <div>
+                    <div class="divPlus03"><span class="unicod03">&#10003</span><span>Продажа по цене близкой к
+                            среднерыночной</span></div>
+                    <div class="divPlus07"><span class="unicod07">&#10007</span><span>Долго и зачастую безуспешно</span>
+                    </div>
+                    <div class="divPlus07"><span class="unicod07">&#10007</span><span>Деньги как найдете
+                            покупателя</span></div>
+                    <div class="divPlus07"><span class="unicod07">&#10007</span><span>Есть риски при продаже
+                            перекупщикам</span></div>
+                </div>
+            </div>
+            <div class="div2">
+                <span class="namePreimyshestva1">Продажа нам</span>
+                <div>
+                    <div class="divPlus03"><span class="unicod03">&#10003</span><span>Платим до 90% от рыночной
+                            цены</span></div>
+                    <div class="divPlus03"><span class="unicod03">&#10003</span><span>Деньги Вы получаете в день
+                            оценки</span></div>
+                    <div class="divPlus03"><span class="unicod03">&#10003</span><span>Выкупаем нелеквидные и технически
+                            неисправные
+                            авто</span></div>
+                    <div class="divPlus03"><span class="unicod03">&#10003</span><span>Даем юридические гаранти</span>
+                    </div>
+                </div>
+            </div>
+            <div class="div3">
+                <span class="namePreimyshestva">Продажа перекупщикам</span>
+                <div>
+                    <div class="divPlus07"><span class="unicod07">&#10007</span><span>Цена в лучшем случае 70-80% от
+                            рыночной</span></div>
+                    <div class="divPlus03"><span class="unicod03">&#10003</span><span>Деньги Вы получаете сразу</span>
+                    </div>
+                    <div class="divPlus07"><span class="unicod07">&#10007</span><span>Авто числится на Вас до момента
+                            переоформления на
+                            реального
+                            покупателя</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="Voprosu" id="idCentrHeader">
+        <div class="accordion">
+            <input type="radio" name="select" class="accordion-select" checked />
+            <div class="accordion-title"><span>Я хочу срочно продать свой автомобиль, как мне быть?</span></div>
+            <div class="accordion-content">Оставьте заявку на сайте либо позвоните нам +38-066-303-50-97. <br> При
+                хорошем
+                техническом состоянии мы заплатим за него до 90% от рыночной стоимости </div>
+            <input type="radio" name="select" class="accordion-select"/>
+            <div class="accordion-title"><span>В чем преимущества Вашего автовыкупа?</span></div>
+            <div class="accordion-content">На самом деле преимуществ у услуги довольно
+                много. Так, например, благодаря подобной услуге продажа транспортного средства происходит довольно
+                быстро. При это продать автомобиль можно в любом случае, несмотря на то, в каком он состоянии. </div>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title"><span>У меня машина с неисправной АКПП, как мне её Вам продать?</span></div>
+            <div class="accordion-content">- Оформить заявку на сайте или позвонить. <br>
+                - Дождаться оценщика и ознакомиться с условиями продажи авто.<br>
+                - Оформить договор-купли продажи.<br>
+                - Получить деньги.</div>
+            <input type="radio" name="select" class="accordion-select" checked />
+            <div class="accordion-title"><span>Будет ли отличаться цена названная мне по телефону от той когда я к Вам
+                    приеду ?</span></div>
+            <div class="accordion-content"> Точная цена указывается после проверки технического состояния автомобиля
+            </div>
+        </div>
+    </main>
+    <main class="credit" id="idCredit">
+        <div class="inputDiv">
+            <input type="range" min="80000" max="3000000" value="500000" step="28000" class="slider" id="r1"
+                oninput="fun123()">
+            <p>Цена авто: <span id="i1"></span></p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="r2" oninput="fun123()">
+            <p>Первый платеж: <span id="i2"></span>%</p>
+            <input type="range" min="12" max="84" value="36" step="12" class="slider" id="r3" oninput="fun123()">
+            <p>Количество месяцев: <span id="i3"></span></p>
+        </div>
+
+        <div class="spanDiv">
+            <span type="text" id="kasko"> Каско :</span>
+            <span type="text" id="registration"> Регистрация авто :</span>
+            <span type="text" id="Sum"> Общая сумма к выплате :</span>
+            <span type="text" id="percent"> Процентная ставка :</span>
+            <span type="text" id="Overpayment"> Переплата по кредиту :</span>
+        </div>
+    </main>
+    <header>
+        <div class="leftHeader">
+            <div><img src="img/3.png" alt="phone"><span>+38-066-303-50-97</span></div>
+            <div><img src="img/4.png" alt="clock"><span>Ежедневно с 9:00 - 18:00</span></div>
+        </div>
+        <div class="centrHeader">
+            <span>Остались вопросы?</span>
+            <input type="text" name="" id="name1" value="Ваше имя*">
+            <input type="text" name="" id="phone1" value="Ваш телефон*">
+            <input type="text" name="" id="ask1" value="Ваш вопрос*">
+            <button id="askButton">Отправить</button>
+        </div>
+        <div class="rightHeader">
+            <a href="#idFooter"><span>К началу страницы</span></a>
+            <a href="#idMainFooter"><span>Виды выкупаемых автомобилей</span></a>
+            <a href="#idMainCentrTop"><span>Наши преимущества</span></a>
+            <a href="#idCentrHeader"><span>Часто задаваемые вопросы</span></a>
+        </div>
+    </header>
+    <header class="konstantin">
+        <span>© 2022 Все права защищены, Konstantin</span>
+        <div id="badges">
+            <a
+                href="https://www.linkedin.com/in/%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD-%D0%BF%D0%B5%D1%82%D1%80%D0%B5%D0%BD%D0%BA%D0%BE-505b98220/)">
+                <img class="imgLogo"
+                    src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white"
+                    alt="LinkedIn Badge" />
+            </a>
+            <a href="https://github.com/KestPetrenko">
+                <img class="imgLogo"
+                    src="https://img.shields.io/badge/Github-blue?style=for-the-badge&logo=Github&logoColor=white"
+                    alt="Github Badge" />
+            </a>
+            <a href="https://m.facebook.com/100023856827972/">
+                <img class="imgLogo"
+                    src="https://img.shields.io/badge/Facebook-blue?style=for-the-badge&logo=Facebook&logoColor=white"
+                    alt="Facebook Badge" />
+            </a>
+        </div>
+        <div class="logo">
+            <img src="img/logo2.png" alt="logo" class="logo2">
+        </div>
+    </header>
+
+
+
+
+    <script src="scripts/mustache.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/button.js"></script>
+    <script src="scripts/credit.js"></script>
+</body>
+
+</html>
